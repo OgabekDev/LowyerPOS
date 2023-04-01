@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/passwordFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uz.loyver.loyver.ui.fragment.main.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_productsFragment"
+            app:destination="@id/productsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_chequeFragment"
+            app:destination="@id/chequeHistoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_activeChequesFragment"
+            app:destination="@id/activeChequesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_printersFragment"
+            app:destination="@id/printersFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addPersonFragment"
+            app:destination="@id/addPersonFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_changeAmountFragment"
+            app:destination="@id/changeAmountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="uz.loyver.loyver.ui.fragment.main.ProductsFragment"
+        android:label="fragment_products"
+        tools:layout="@layout/fragment_products" >
+        <action
+            android:id="@+id/action_productsFragment_to_createProductFragment"
+            app:destination="@id/createProductFragment" />
+        <action
+            android:id="@+id/action_productsFragment_to_updateProductFragment"
+            app:destination="@id/updateProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createProductFragment"
+        android:name="uz.loyver.loyver.ui.fragment.CreateProductFragment"
+        android:label="fragment_create_product"
+        tools:layout="@layout/fragment_create_product" >
+        <action
+            android:id="@+id/action_createProductFragment_to_createCategoryFragment"
+            app:destination="@id/createCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createCategoryFragment"
+        android:name="uz.loyver.loyver.ui.fragment.CreateCategoryFragment"
+        android:label="fragment_create_category"
+        tools:layout="@layout/fragment_create_category" >
+        <action
+            android:id="@+id/action_createCategoryFragment_to_createProductFragment"
+            app:destination="@id/createProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="uz.loyver.loyver.ui.fragment.main.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_categoriesFragment_to_createCategoryFragment"
+            app:destination="@id/createCategoryFragment" />
+        <action
+            android:id="@+id/action_categoriesFragment_to_updateCategoryFragment"
+            app:destination="@id/updateCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chequeHistoryFragment"
+        android:name="uz.loyver.loyver.ui.fragment.main.ChequeHistoryFragment"
+        android:label="fragment_cheque"
+        tools:layout="@layout/fragment_cheque_history" >
+        <action
+            android:id="@+id/action_chequeHistoryFragment_to_chequeDetailsFragment"
+            app:destination="@id/chequeDetailsFragment" />
+        <action
+            android:id="@+id/action_chequeHistoryFragment_to_savedChequeDetailsFragment"
+            app:destination="@id/savedChequeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/activeChequesFragment"
+        android:name="uz.loyver.loyver.ui.fragment.ActiveChequesFragment"
+        android:label="fragment_active_cheques"
+        tools:layout="@layout/fragment_active_cheques" >
+        <action
+            android:id="@+id/action_activeChequesFragment_to_addPersonFragment"
+            app:destination="@id/addPersonFragment" />
+        <action
+            android:id="@+id/action_activeChequesFragment_to_changeAmountFragment"
+            app:destination="@id/changeAmountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/printersFragment"
+        android:name="uz.loyver.loyver.ui.fragment.main.PrintersFragment"
+        android:label="fragment_printers"
+        tools:layout="@layout/fragment_printers" >
+        <action
+            android:id="@+id/action_printersFragment_to_createPrinterFragment"
+            app:destination="@id/createPrinterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chequeDetailsFragment"
+        android:name="uz.loyver.loyver.ui.fragment.ChequeDetailsFragment"
+        android:label="fragment_cheque_details"
+        tools:layout="@layout/fragment_cheque_details" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProductToCategoryFragment"
+        android:name="uz.loyver.loyver.ui.fragment.AddProductToCategoryFragment"
+        android:label="fragment_add_product_to_category"
+        tools:layout="@layout/fragment_add_product_to_category" >
+        <argument
+            android:name="category"
+            app:argType="uz.loyver.loyver.model.Category" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="uz.loyver.loyver.ui.fragment.PasswordFragment"
+        android:label="fragment_password"
+        tools:layout="@layout/fragment_password" >
+        <action
+            android:id="@+id/action_passwordFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPersonFragment"
+        android:name="uz.loyver.loyver.ui.fragment.AddPersonFragment"
+        android:label="fragment_add_person"
+        tools:layout="@layout/fragment_add_person" >
+        <action
+            android:id="@+id/action_addPersonFragment_to_createCustomerFragment"
+            app:destination="@id/createCustomerFragment" />
+        <action
+            android:id="@+id/action_addPersonFragment_to_customerDetailsFragment"
+            app:destination="@id/customerDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createCustomerFragment"
+        android:name="uz.loyver.loyver.ui.fragment.CreateCustomerFragment"
+        android:label="fragment_create_customer"
+        tools:layout="@layout/fragment_create_customer" >
+        <action
+            android:id="@+id/action_createCustomerFragment_to_customerDetailsFragment"
+            app:destination="@id/customerDetailsFragment"
+            app:popUpTo="@id/createCustomerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/customerDetailsFragment"
+        android:name="uz.loyver.loyver.ui.fragment.CustomerDetailsFragment"
+        android:label="fragment_customer_details"
+        tools:layout="@layout/fragment_customer_details" >
+        <action
+            android:id="@+id/action_customerDetailsFragment_to_customerHistoryChequeFragment"
+            app:destination="@id/customerHistoryChequeFragment" />
+        <action
+            android:id="@+id/action_customerDetailsFragment_to_createCustomerFragment"
+            app:destination="@id/createCustomerFragment" />
+        <action
+            android:id="@+id/action_customerDetailsFragment_to_updateCustomerFragment"
+            app:destination="@id/updateCustomerFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/customerHistoryChequeFragment"
+        android:name="uz.loyver.loyver.ui.fragment.CustomerHistoryChequeFragment"
+        android:label="fragment_customer_history_cheque"
+        tools:layout="@layout/fragment_customer_history_cheque" >
+        <argument
+            android:name="customerId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_customerHistoryChequeFragment_to_chequeDetailsFragment"
+            app:destination="@id/chequeDetailsFragment" />
+        <action
+            android:id="@+id/action_customerHistoryChequeFragment_to_savedChequeDetailsFragment"
+            app:destination="@id/savedChequeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeAmountFragment"
+        android:name="uz.loyver.loyver.ui.fragment.ChangeAmountFragment"
+        android:label="fragment_change_amount"
+        tools:layout="@layout/fragment_change_amount" >
+        <argument
+            android:name="product"
+            app:argType="uz.loyver.loyver.model.ChequeProduct" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateProductFragment"
+        android:name="uz.loyver.loyver.ui.fragment.UpdateProductFragment"
+        android:label="fragment_update_product"
+        tools:layout="@layout/fragment_update_product" >
+        <argument android:name="id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_updateProductFragment_to_createCategoryFragment"
+            app:destination="@id/createCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateCategoryFragment"
+        android:name="uz.loyver.loyver.ui.fragment.UpdateCategoryFragment"
+        android:label="fragment_update_category"
+        tools:layout="@layout/fragment_update_category" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_updateCategoryFragment_to_createProductFragment"
+            app:destination="@id/createProductFragment" />
+        <action
+            android:id="@+id/action_updateCategoryFragment_to_addProductToCategoryFragment"
+            app:destination="@id/addProductToCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateCustomerFragment"
+        android:name="uz.loyver.loyver.ui.fragment.UpdateCustomerFragment"
+        android:label="fragment_update_customer"
+        tools:layout="@layout/fragment_update_customer" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPrinterFragment"
+        android:name="uz.loyver.loyver.ui.fragment.CreatePrinterFragment"
+        android:label="fragment_create_printer"
+        tools:layout="@layout/fragment_create_printer" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedChequeDetailsFragment"
+        android:name="uz.loyver.loyver.ui.fragment.SavedChequeDetailsFragment"
+        android:label="fragment_saved_cheque_details"
+        tools:layout="@layout/fragment_saved_cheque_details" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+</navigation>

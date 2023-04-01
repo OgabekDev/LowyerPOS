@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/overFlowMenu"
+        android:title=""
+        android:icon="@drawable/ic_more"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/navRefresh"
+                android:icon="@drawable/ic_sync"
+                android:title="@string/str_refresh"
+                app:iconTint="#747474"/>
+
+        </menu>
+
+    </item>
+
+</menu>

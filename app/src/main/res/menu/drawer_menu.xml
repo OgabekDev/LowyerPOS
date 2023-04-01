@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/navSell"
+            android:icon="@drawable/img_nav_sell"
+            android:checked="true"
+            android:title="@string/str_sell"/>
+
+        <item android:id="@+id/navCheque"
+            android:icon="@drawable/img_nav_cheque"
+            android:title="@string/str_cheque"/>
+
+        <item android:id="@+id/navProducts"
+            android:icon="@drawable/img_nav_products"
+            android:title="@string/str_products"/>
+
+        <item android:id="@+id/navCategory"
+            android:icon="@drawable/img_nav_category"
+            android:title="@string/str_categories"/>
+
+        <item android:id="@+id/navPrinters"
+            android:icon="@drawable/img_nav_printers"
+            android:title="@string/str_printers"/>
+
+    </group>
+
+</menu>

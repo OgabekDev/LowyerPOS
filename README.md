@@ -28,3 +28,12 @@ Something not working quite as expected? Do you need a feature that has not been
 
 ### !!! MUST
 * Do not download and run this app because it is a working program
+
+### Buy me a coffee 🙏
+<a href="https://www.buymeacoffee.com/OgabekDev"><img src="https://user-images.githubusercontent.com/91304483/230314582-52c035e1-ab8b-4c9b-bc4c-19f13a2fcbc2.svg" title="Buy me a coffee" width="128" height="50" /></a>
+
+### Feel free to get in touch (send me a offer 😇)
+* [Telegram](https://www.t.me/Ogabek_Dev)
+* [Instagram](https://www.instagram.com/OgabekDev)
+* [Facebook](https://www.facebook.com/OgabekDev)
+* [LinkedIn](https://www.linkedin.com/in/Ogabek_Dev)

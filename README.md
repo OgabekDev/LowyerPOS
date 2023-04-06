@@ -28,6 +28,3 @@ Something not working quite as expected? Do you need a feature that has not been
 
 ### !!! MUST
 * Do not download and run this app because it is a working program
-
-### License
-Compose-ShoppingList is released under the MIT license. See [LICENSE](./LICENSE) for details.

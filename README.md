@@ -36,4 +36,4 @@ Something not working quite as expected? Do you need a feature that has not been
 * [Telegram](https://www.t.me/Ogabek_Dev)
 * [Instagram](https://www.instagram.com/OgabekDev)
 * [Facebook](https://www.facebook.com/OgabekDev)
-* [LinkedIn](https://www.linkedin.com/in/Ogabek_Dev)
+* [LinkedIn](https://www.linkedin.com/in/OgabekDev)
